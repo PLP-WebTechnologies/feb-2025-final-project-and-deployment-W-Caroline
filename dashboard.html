@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - J&R High School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">J&R</span> High School</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="dashboard-link">Dashboard</a></li>
+                    <li><a href="#" id="profile-link">Profile</a></li>
+                    <li><a href="#" id="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="dashboard">
+        <div class="container">
+            <div id="welcome-message">
+                <h2>Welcome, <span id="user-name"></span>!</h2>
+                <p id="role-description"></p>
+            </div>
+
+            <!-- Teacher Dashboard -->
+            <div id="teacher-dashboard" class="dashboard-section">
+                <h3>Teacher Dashboard</h3>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <h4>My Classes</h4>
+                        <div id="teacher-classes" class="card-content">
+                            <!-- Filled dynamically -->
+                        </div>
+                    </div>
+                    <div class="dashboard-card">
+                        <h4>Enter Grades</h4>
+                        <div class="card-content">
+                            <form id="grade-form">
+                                <div class="form-group">
+                                    <label for="grade-class">Class</label>
+                                    <select id="grade-class" required>
+                                        <!-- Filled dynamically -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="grade-student">Student</label>
+                                    <select id="grade-student" required>
+                                        <!-- Filled dynamically -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="grade-assignment">Assignment</label>
+                                    <input type="text" id="grade-assignment" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="grade-score">Score</label>
+                                    <input type="number" id="grade-score" min="0" max="100" required>
+                                </div>
+                                <button type="submit" class="button_1">Submit Grade</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Dashboard -->
+            <div id="student-dashboard" class="dashboard-section">
+                <h3>Student Dashboard</h3>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <h4>My Grades</h4>
+                        <div id="student-grades" class="card-content">
+                            <!-- Filled dynamically -->
+                        </div>
+                    </div>
+                    <div class="dashboard-card">
+                        <h4>My Schedule</h4>
+                        <div id="student-schedule" class="card-content">
+                            <!-- Filled dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parent Dashboard -->
+            <div id="parent-dashboard" class="dashboard-section">
+                <h3>Parent Dashboard</h3>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <h4>My Children</h4>
+                        <div id="parent-children" class="card-content">
+                            <!-- Filled dynamically -->
+                        </div>
+                    </div>
+                    <div class="dashboard-card">
+                        <h4>Children's Grades</h4>
+                        <div id="children-grades" class="card-content">
+                            <!-- Filled dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>J&R High School &copy; 2023</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

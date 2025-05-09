@@ -1,0 +1,433 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    background: url('https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg') no-repeat center center/cover;
+    text-align: center;
+    color: #ffffff;
+    padding: 100px 0;
+    position: relative;
+}
+
+#showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#showcase .container {
+    position: relative;
+    z-index: 1;
+}
+
+#showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+    padding: 15px 0;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter h2 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 38px;
+    width: 250px;
+}
+
+/* Boxes */
+#boxes {
+    margin: 20px 0;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.box img, .facility-item img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.image-credit {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Buttons */
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button_1:hover {
+    background: #333;
+}
+
+/* Login Form */
+#login {
+    padding: 40px 0;
+}
+
+#login .container {
+    max-width: 500px;
+}
+
+#login-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: #e8491d;
+    margin-top: 10px;
+}
+
+/* Dashboard */
+#dashboard {
+    padding: 40px 0;
+}
+
+.dashboard-section {
+    display: none;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.dashboard-card h4 {
+    margin-bottom: 15px;
+    color: #e8491d;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.card-content {
+    min-height: 200px;
+}
+
+/* About Page Styles */
+#main {
+    padding: 40px 0;
+}
+
+#main-col {
+    float: left;
+    width: 65%;
+    padding-right: 30px;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+}
+
+.page-title {
+    margin-bottom: 20px;
+    color: #35424a;
+}
+
+.dark {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.achievements {
+    margin: 15px 0 15px 20px;
+}
+
+.achievements li {
+    margin-bottom: 8px;
+}
+
+.fact-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8491d;
+}
+
+.fact-item:last-child {
+    border-bottom: none;
+}
+
+.quote {
+    margin-top: 20px;
+    font-style: italic;
+    padding: 15px;
+    background: #f4f4f4;
+    border-left: 3px solid #e8491d;
+}
+
+.quote .author {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Facilities Section */
+#facilities {
+    padding: 20px 0;
+    clear: both;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.facility-item {
+    text-align: center;
+}
+
+/* Contact Page Styles */
+#contact-main {
+    padding: 40px 0;
+}
+
+#contact-info {
+    float: left;
+    width: 60%;
+    padding-right: 30px;
+}
+
+#contact-form {
+    float: right;
+    width: 35%;
+}
+
+.contact-method {
+    margin-bottom: 30px;
+}
+
+.contact-method h3 {
+    color: #e8491d;
+    margin-bottom: 10px;
+}
+
+.map-container {
+    margin-top: 40px;
+}
+
+.map {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Departments Section */
+#departments {
+    padding: 20px 0;
+    clear: both;
+}
+
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.department {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.department h4 {
+    color: #e8491d;
+    margin-bottom: 10px;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    filter: brightness(0) invert(1);
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Form Styles */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
